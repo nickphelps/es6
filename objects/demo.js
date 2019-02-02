@@ -54,3 +54,4 @@ let obj4 = {
     [keyToWrite]: "hi"
 }
 obj4.key2 === "hi";
+
