@@ -15,7 +15,6 @@ let { key1, key2 } = object;
 key1 === "hello";
 key2 === "goodbye";
 
-
 // It's still possible to "unpack" arrays and objects without 
 // destructuring, but you would need a new line for each unpacked variable:
 let first = array[0];

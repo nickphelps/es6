@@ -11,4 +11,8 @@ let array = [
 // Using destructuring, and in one line of code, 
 //  create 2 variables that extract the names of everyone in the array
 
-YOUR_CODE_HERE
+let [{name: firstName}, {name: secondName}] = array
+
+console.log(firstName)
+
+console.log(secondName)
