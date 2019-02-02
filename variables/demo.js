@@ -34,7 +34,6 @@ if (1 === 1) {
 // code here can NOT use carName
 // but it can use otherName
 
-
 // the "const" keyword behaves just like "let", but they cannot be reassigned:
 const PI = 3.141592653589793;
 PI = 3.14;      // This will give an error
