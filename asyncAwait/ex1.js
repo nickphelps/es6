@@ -9,3 +9,14 @@ let getDogsOwnersBestFriend = () => {
         return friend.name;
     })
 }
+
+let getDogsOwnersBestFriend = async () => {
+    let response1 = await axios.get('/dog/1')
+    return get(`/owner/${dog.owner}`)
+    let response2 = await owner => {
+        return get(`/friend/${owner.bestFriend}`)
+    }
+    let response3 = await firend => {
+        return friend.name
+    }
+}
