@@ -10,17 +10,22 @@ const inventory = [
 ]
 
 // Filter out things that arent machines:
-let justMachines = inventory.map((inventory) => {
-    // return inventory.type 
-    if (inventory.type === 'machine') {
-        return inventory.type
-    }
-})
+// let justMachines = inventory.map((inventory) => {
+//     // return inventory.type 
+//     if (inventory.type === 'machine') {
+//         return inventory.type
+//     }
+// })
+
+let justMachines = inventory.filter(item => item.type === 'machine')
 console.log(justMachines)
 
 // Calculate the total value of the machines
-// let totalMachineValue = inventory.reduce(() => {
-    
-// })
-
-// console.log(totalMachineValue)
+let totalMachineValue = inventory.map((inventory) => {
+    return inventory.value
+})
+var total = 0
+for (let i = 0; i < totalMachineValue.length; i++) {
+    total += totalMachineValue[i]
+}
+console.log(total)
